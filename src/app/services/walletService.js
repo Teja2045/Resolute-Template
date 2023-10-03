@@ -84,7 +84,7 @@ export const connectWalletV1 = async (data) => {
     if (chainInfos.length === 0) {
       alert("Permission denied for all the networks");
     }
-    alert("successful");
+    
     data.setIsConnected(true);
   }
 };
