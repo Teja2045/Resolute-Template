@@ -21,14 +21,11 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         {
-          <>
+          <div className="layout">
             <ConnectWalletButton>
               <PermanentSideBar />
-            </ConnectWalletButton>
-
-            <br />
-            
-          </>
+            </ConnectWalletButton>  
+          </div>
         }
       </body>
     </html>

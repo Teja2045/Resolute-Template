@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import React, { useState } from "react";
 import { connectWalletV1 } from "../services/walletService";
 import { networks } from "../utils/chainsInfo";
@@ -14,12 +14,15 @@ export const ConnectWalletButton = ({
   return isConnected ? (
     <>{children}</>
   ) : (
-    <Button
-      onClick={() =>
-        connectWalletV1({ mainnets: networks, testnets: [], setIsConnected })
-      }
-    >
-      connect wallet
-    </Button>
+    <div className="grid place-items-center h-screen">
+      <Button
+        variant="contained"
+        onClick={() =>
+          connectWalletV1({ mainnets: networks, testnets: [], setIsConnected })
+        }
+      >
+        connect wallet
+      </Button>
+    </div>
   );
 };
