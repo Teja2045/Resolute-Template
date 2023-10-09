@@ -36,9 +36,9 @@ const menuItems = [
   },
 ];
 
-const PermanentSidebar = () => {
+const PermanentSidebar = ({ children }: { children: React.ReactNode }) => {
   return (
-    <div>
+    <div className="flex">
       <div className="sidebar">
         <div className="sidebar__menu">
           <Image
@@ -49,13 +49,20 @@ const PermanentSidebar = () => {
           />
           <div className="flex flex-col gap-4">
             {menuItems.map((item, index) => (
-              <MenuItem key={index} itemName={item.name} icon={item.icon} selected={item.name==="Overview"?true:false} />
+              <MenuItem
+                key={index}
+                itemName={item.name}
+                icon={item.icon}
+                selected={item.name === "Overview" ? true : false}
+              />
             ))}
           </div>
         </div>
-        <div className="sidebar__footer">
-          
-        </div>
+        <div className="sidebar__footer"></div>
+      </div>
+      {}
+      <div className="flex flex-col items-center overflow-y-scroll no-scrollbar h-screen w-screen text-white">
+              {children}
       </div>
     </div>
   );
@@ -73,7 +80,11 @@ const MenuItem = ({
   selected: boolean;
 }) => {
   return (
-    <div className={`sidebar__menu__item ${selected ? "sidebar__menu__item-selected" : ""}`}>
+    <div
+      className={`sidebar__menu__item ${
+        selected ? "sidebar__menu__item-selected" : ""
+      }`}
+    >
       <Image src={icon} width={24} height={24} alt={itemName} />
       <div className="ml-2">{itemName}</div>
     </div>
