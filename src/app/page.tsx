@@ -1,9 +1,11 @@
-"use client";
+'use client'
 
-import Walletpage from "./components/WalletPage";
+import { usePathname } from 'next/navigation'
+import Walletpage from './components/WalletPage'
 
 export default function Home() {
+  const pathname = usePathname()
   return <>
-  <Walletpage/>
-  </>;
+    
+    <Walletpage /></>
 }

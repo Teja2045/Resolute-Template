@@ -23,8 +23,8 @@ export default function RootLayout({
         {
           <div className="layout">
             <ConnectWalletButton>
-              <PermanentSideBar />
-            </ConnectWalletButton>  
+              <PermanentSideBar> {children}</PermanentSideBar>
+            </ConnectWalletButton> 
           </div>
         }
       </body>
