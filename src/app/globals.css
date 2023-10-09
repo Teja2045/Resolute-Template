@@ -31,4 +31,8 @@
   .sidebar__menu__item-selected {
     @apply bg-[#B0B0B033] hover:bg-[#B0B0B033]
   }
+  .custom-box {
+    @apply w-[1102px] h-[300px];  
+  }
+  
 }
