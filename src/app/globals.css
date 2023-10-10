@@ -26,13 +26,13 @@ body {
   @variants responsive {
     /* Hide scrollbar for Chrome, Safari and Opera */
     .no-scrollbar::-webkit-scrollbar {
-        display: none;
+      display: none;
     }
 
     /* Hide scrollbar for IE, Edge and Firefox */
     .no-scrollbar {
-        -ms-overflow-style: none;  /* IE and Edge */
-        scrollbar-width: none;  /* Firefox */
+      -ms-overflow-style: none; /* IE and Edge */
+      scrollbar-width: none; /* Firefox */
     }
   }
 }
@@ -82,7 +82,7 @@ body {
   }
 
   .sidebar {
-    @apply h-screen w-[260px] px-4 py-6;
+    @apply h-screen w-[260px] px-4 py-6 flex flex-col justify-between;
     background: linear-gradient(
       180deg,
       #1f102d 25.28%,
@@ -101,5 +101,39 @@ body {
 
   .sidebar__menu__item-selected {
     @apply bg-[#B0B0B033] hover:bg-[#B0B0B033];
+  }
+
+  .sidebar__footer {
+    @apply flex gap-6 flex-col;
+  }
+
+  .sidebar__footer__border {
+    @apply h-[1px] bg-[#B0B0B033];
+  }
+
+  .sidebar__footer__authz {
+    @apply flex gap-2 px-4 py-2 text-white text-[14px] leading-3;
+  }
+}
+
+@layer components {
+  .topNav {
+    @apply w-full flex justify-between;
+  }
+
+  .topNav__title h2 {
+    @apply text-white text-[20px] leading-6 font-bold;
+  }
+
+  .topNav__options {
+    @apply flex gap-6 items-center;
+  }
+
+  .topNav__options__networks {
+    @apply flex items-center justify-between w-[200px] rounded-full border-[1px] px-4 py-1;
+  }
+
+  .topNav__options__networks__currentNetwork {
+    @apply text-[14px] leading-3 text-white;
   }
 }
