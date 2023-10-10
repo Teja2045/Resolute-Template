@@ -8,6 +8,7 @@ body {
   @apply leading-[normal] m-0;
 }
 
+
 *,
 ::before,
 ::after {
@@ -46,6 +47,14 @@ body {
   .connectWallet {
     @apply px-[120px] flex flex-col justify-center h-screen;
     font-family: "Space Grotesk" !important;
+  }
+
+  .connectWallet__ship1 {
+    @apply absolute top-[72px] left-[272px];
+  }
+
+  .connectWallet__ship2 {
+    @apply absolute top-[180px] left-[282px];
   }
 
   .connectWallet__header {
@@ -99,6 +108,72 @@ body {
   .sidebar__menu__item-selected {
     @apply bg-[#B0B0B033] hover:bg-[#B0B0B033];
   }
+
+  .sidebar__footer {
+    @apply flex gap-6 flex-col;
+  }
+
+  .sidebar__footer__border {
+    @apply h-[1px] bg-[#B0B0B033];
+  }
+
+  .sidebar__footer__authz {
+    @apply flex gap-2 px-4 py-2 text-white text-[14px] leading-3;
+  }
+}
+
+@layer components {
+  .topNav {
+    @apply w-full flex justify-between items-center;
+  }
+
+  .topNav__title h2 {
+    @apply text-white text-[20px] leading-6 font-bold;
+  }
+
+  .topNav__options {
+    @apply flex gap-6 items-center;
+  }
+
+  .topNav__options__networks {
+    @apply flex items-center justify-between w-[200px] rounded-full border-[1px] px-4 py-1;
+  }
+
+  .topNav__options__networks__currentNetwork {
+    @apply text-[14px] leading-3 text-white;
+  }
+}
+
+
+@layer components {
+  .page {
+    @apply w-full p-10;
+  }
+
+  .account-details {
+    @apply w-full p-8 flex rounded-2xl items-center justify-between text-right text-[16px] bg-[#20372cbf];
+  }
+
+  .network-data{
+    @apply flex items-center space-x-2;
+  }
+
+  .address {
+    @apply text-white text-right text-base font-normal leading-3 tracking-wider;
+  }
+
+  .account-metadata {
+    @apply flex flex-col justify-between space-y-4;
+  }
+
+  .account-metadata__title {
+    @apply text-gray-400 text-right text-sm font-normal leading-4 tracking-tighter;
+  }
+
+  .account-metadata__content {
+    @apply text-white text-right text-base font-normal leading-[40px] tracking-[0.56px];
+  }
+}
 
   .custom-box {
     @apply w-[1102px] h-[300px] rounded-2xl;
