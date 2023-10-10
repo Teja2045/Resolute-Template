@@ -16,6 +16,20 @@ export const ConnectWalletButton = ({
   ) : (
     <div>
       <div className="connectWallet">
+        <Image
+          className="connectWallet__ship1"
+          src="/space-ship.png"
+          width={136}
+          height={151}
+          alt="Space Ship"
+        />
+        <Image
+          className="connectWallet__ship2"
+          src="/space-ship.png"
+          width={72}
+          height={80}
+          alt="Space Ship"
+        />
         <div className="connectWallet__header">
           <Image
             src="/vitwit-logo.png"
@@ -32,7 +46,6 @@ export const ConnectWalletButton = ({
         <div className="resolute__title__caption">
           <h2>Interchain Interface</h2>
         </div>
-        <button>khgjh</button>
         <div>
           <button
             className="connectWallet__btn"
