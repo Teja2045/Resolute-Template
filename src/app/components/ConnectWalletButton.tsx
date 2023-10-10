@@ -36,15 +36,13 @@ export const ConnectWalletButton = ({
         <div>
           <button
             className="connectWallet__btn"
-            onClick={() =>{
+            onClick={() => {
               connectWalletV1({
                 mainnets: networks,
                 testnets: [],
                 setIsConnected,
-              })
-            }
-             
-            }
+              });
+            }}
           >
             CONNECT WALLET
           </button>
