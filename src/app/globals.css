@@ -148,16 +148,18 @@ body {
     @apply w-full p-10;
   }
 
-  .account-details {
+  .details-overview-card {
     @apply w-full p-8 flex rounded-2xl items-center justify-between text-right text-[16px] bg-[#20372cbf];
   }
 
-  .network-data{
+  .network-data {
     @apply flex items-center space-x-2;
   }
 
   .address {
-    @apply text-white text-right text-base font-normal leading-3 tracking-wider;
+    @apply text-white text-right text-base not-italic font-normal leading-3 tracking-[0.64px];
+
+    /* 75% */
   }
 
   .account-metadata {
@@ -170,5 +172,29 @@ body {
 
   .account-metadata__content {
     @apply text-white text-right text-base font-normal leading-[40px] tracking-[0.56px];
+  }
+
+  .balance-title {
+    @apply text-white text-xl not-italic font-bold leading-3 tracking-[0.8px];
+
+    /* 60% */
+  }
+
+  .balance-amount {
+    @apply text-white text-left text-[28px] not-italic font-semibold leading-10 tracking-[1.12px];
+
+    /* 142.857% */
+  }
+
+  .balance-title-1 {
+    @apply text-white text-right text-sm not-italic font-normal leading-4 tracking-[0.28px];
+
+    /* 114.286% */
+  }
+
+  .balance-amount-1 {
+    @apply text-white text-right text-sm not-italic font-semibold leading-10 tracking-[0.56px];
+
+    /* 285.714% */
   }
 }
