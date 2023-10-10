@@ -106,6 +106,40 @@ body {
   .sidebar__menu__item-selected {
     @apply bg-[#B0B0B033] hover:bg-[#B0B0B033];
   }
+
+  .sidebar__footer {
+    @apply flex gap-6 flex-col;
+  }
+
+  .sidebar__footer__border {
+    @apply h-[1px] bg-[#B0B0B033];
+  }
+
+  .sidebar__footer__authz {
+    @apply flex gap-2 px-4 py-2 text-white text-[14px] leading-3;
+  }
+}
+
+@layer components {
+  .topNav {
+    @apply w-full flex justify-between;
+  }
+
+  .topNav__title h2 {
+    @apply text-white text-[20px] leading-6 font-bold;
+  }
+
+  .topNav__options {
+    @apply flex gap-6 items-center;
+  }
+
+  .topNav__options__networks {
+    @apply flex items-center justify-between w-[200px] rounded-full border-[1px] px-4 py-1;
+  }
+
+  .topNav__options__networks__currentNetwork {
+    @apply text-[14px] leading-3 text-white;
+  }
 }
 
 

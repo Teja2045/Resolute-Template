@@ -51,7 +51,7 @@ const menuItems = [
 const PermanentSidebar = ({ children }: { children: React.ReactNode }) => {
   const pathname = usePathname();
   return (
-    <div className="flex">
+    <div className="flex bg-[#1F102D99]">
       <div className="sidebar">
         <div className="sidebar__menu">
           <Image
@@ -73,9 +73,16 @@ const PermanentSidebar = ({ children }: { children: React.ReactNode }) => {
             ))}
           </div>
         </div>
-        <div className="sidebar__footer"></div>
+        <div className="sidebar__footer">
+          <div className="sidebar__footer__border"></div>
+          <div className="sidebar__footer__authz">
+            <div>Authz Mode</div>
+            <div>
+              Toggle
+            </div>
+          </div>
+        </div>
       </div>
-      {}
       <div className="flex flex-col items-center overflow-y-scroll no-scrollbar h-screen w-screen text-white">
         {children}
       </div>
