@@ -1,27 +1,14 @@
-import React from 'react'
+import React from "react";
+import HomeComponent from "./components/HomeComponent";
+import Image from "next/image";
+import AccountDetails from "./components/AccountDetails";
 
 const OverviewPage = () => {
   return (
-    <div>
-      <div>Overview</div>
-      <div>
-        <div>
-          address
-        </div>
-        <div>
-          <div>
-          public key
-          </div>
-          <div>
-            Account number
-          </div>
-          <div>
-            Serquence
-          </div>
-        </div>
-      </div>
+    <div className="page">
+      <AccountDetails />
     </div>
-  )
-}
+  );
+};
 
-export default OverviewPage
+export default OverviewPage;

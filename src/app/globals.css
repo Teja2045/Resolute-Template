@@ -7,6 +7,7 @@
 body {
   @apply leading-[normal] m-0;
 }
+
 *,
 ::before,
 ::after {
@@ -16,6 +17,7 @@ body {
 body {
   @apply leading-[normal] m-0;
 }
+
 *,
 ::before,
 ::after {
@@ -24,18 +26,22 @@ body {
 
 @layer utilities {
   @variants responsive {
+
     /* Hide scrollbar for Chrome, Safari and Opera */
     .no-scrollbar::-webkit-scrollbar {
-        display: none;
+      display: none;
     }
 
     /* Hide scrollbar for IE, Edge and Firefox */
     .no-scrollbar {
-        -ms-overflow-style: none;  /* IE and Edge */
-        scrollbar-width: none;  /* Firefox */
+      -ms-overflow-style: none;
+      /* IE and Edge */
+      scrollbar-width: none;
+      /* Firefox */
     }
   }
 }
+
 @layer components {
   .connectWallet {
     @apply px-[120px] flex flex-col justify-center h-screen;
@@ -83,11 +89,9 @@ body {
 
   .sidebar {
     @apply h-screen w-[260px] px-4 py-6;
-    background: linear-gradient(
-      180deg,
-      #1f102d 25.28%,
-      rgba(98, 76, 82, 0) 110.05%
-    );
+    background: linear-gradient(180deg,
+        #1f102d 25.28%,
+        rgba(98, 76, 82, 0) 110.05%);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   }
 
@@ -101,5 +105,36 @@ body {
 
   .sidebar__menu__item-selected {
     @apply bg-[#B0B0B033] hover:bg-[#B0B0B033];
+  }
+}
+
+
+@layer components {
+  .page {
+    @apply w-full p-10;
+  }
+
+  .account-details {
+    @apply w-full p-8 flex rounded-2xl items-center justify-between text-right text-[16px] bg-[#20372cbf];
+  }
+
+  .network-data{
+    @apply flex items-center space-x-2;
+  }
+
+  .address {
+    @apply text-white text-right text-base font-normal leading-3 tracking-wider;
+  }
+
+  .account-metadata {
+    @apply flex flex-col justify-between space-y-4;
+  }
+
+  .account-metadata__title {
+    @apply text-gray-400 text-right text-sm font-normal leading-4 tracking-tighter;
+  }
+
+  .account-metadata__content {
+    @apply text-white text-right text-base font-normal leading-[40px] tracking-[0.56px];
   }
 }
