@@ -174,7 +174,7 @@ body {
     @apply text-white text-right text-base font-normal leading-[40px] tracking-[0.56px];
   }
 }
-
+@layer components{
   .custom-box {
     @apply w-[1102px] h-[300px] rounded-2xl;
     justify-content: center;
