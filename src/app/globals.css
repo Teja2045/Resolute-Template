@@ -42,6 +42,14 @@ body {
     font-family: "Space Grotesk" !important;
   }
 
+  .connectWallet__ship1 {
+    @apply absolute top-[72px] left-[272px];
+  }
+
+  .connectWallet__ship2 {
+    @apply absolute top-[180px] left-[282px];
+  }
+
   .connectWallet__header {
     @apply pt-6 absolute top-0;
   }
