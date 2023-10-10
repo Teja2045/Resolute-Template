@@ -7,6 +7,7 @@
 body {
   @apply leading-[normal] m-0;
 }
+
 *,
 ::before,
 ::after {
@@ -16,6 +17,7 @@ body {
 body {
   @apply leading-[normal] m-0;
 }
+
 *,
 ::before,
 ::after {
@@ -24,6 +26,7 @@ body {
 
 @layer utilities {
   @variants responsive {
+
     /* Hide scrollbar for Chrome, Safari and Opera */
     .no-scrollbar::-webkit-scrollbar {
       display: none;
@@ -36,6 +39,7 @@ body {
     }
   }
 }
+
 @layer components {
   .connectWallet {
     @apply px-[120px] flex flex-col justify-center h-screen;
@@ -135,5 +139,36 @@ body {
 
   .topNav__options__networks__currentNetwork {
     @apply text-[14px] leading-3 text-white;
+  }
+}
+
+
+@layer components {
+  .page {
+    @apply w-full p-10;
+  }
+
+  .account-details {
+    @apply w-full p-8 flex rounded-2xl items-center justify-between text-right text-[16px] bg-[#20372cbf];
+  }
+
+  .network-data{
+    @apply flex items-center space-x-2;
+  }
+
+  .address {
+    @apply text-white text-right text-base font-normal leading-3 tracking-wider;
+  }
+
+  .account-metadata {
+    @apply flex flex-col justify-between space-y-4;
+  }
+
+  .account-metadata__title {
+    @apply text-gray-400 text-right text-sm font-normal leading-4 tracking-tighter;
+  }
+
+  .account-metadata__content {
+    @apply text-white text-right text-base font-normal leading-[40px] tracking-[0.56px];
   }
 }
