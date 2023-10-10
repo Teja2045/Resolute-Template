@@ -24,7 +24,7 @@ const menuItems = [
   {
     name: "Staking",
     icon: "/staking-icon.svg",
-    link : '/c'
+    link : '/staking'
   },
   {
     name: "Multisig",

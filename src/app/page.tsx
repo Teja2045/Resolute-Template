@@ -1,8 +1,27 @@
-'use client'
- 
-import { usePathname } from 'next/navigation'
- 
-export default function Home() {
-  const pathname = usePathname()
-  return <p>Current pathname: {pathname}</p>
+import React from 'react'
+
+const OverviewPage = () => {
+  return (
+    <div>
+      <div>Overview</div>
+      <div>
+        <div>
+          address
+        </div>
+        <div>
+          <div>
+          public key
+          </div>
+          <div>
+            Account number
+          </div>
+          <div>
+            Serquence
+          </div>
+        </div>
+      </div>
+    </div>
+  )
 }
+
+export default OverviewPage
