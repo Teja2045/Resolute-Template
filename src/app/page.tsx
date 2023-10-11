@@ -9,12 +9,14 @@ import TopNav from "./components/TopNav";
 
 import BalanceOverview from "./components/BalanceOverview";
 
+
 const OverviewPage = () => {
   return (
     <div className="page space-y-10">
       <TopNav />
       <AccountDetails />
       <BalanceOverview />
+      
     </div>
   );
 };

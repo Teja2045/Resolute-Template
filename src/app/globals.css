@@ -175,7 +175,6 @@ body {
   .account-metadata__content {
     @apply text-white text-right text-base font-normal leading-[40px] tracking-[0.56px];
   }
-<<<<<<< HEAD
 }
 @layer components{
   .custom-box {
@@ -216,31 +215,32 @@ body {
   .wallet {
     @apply flex flex-col justify-center items-center
   }
-
-=======
-
-  .balance-title {
-    @apply text-white text-xl not-italic font-bold leading-3 tracking-[0.8px];
-
-    /* 60% */
+  .rectangle-box {
+    @apply w-[788px] h-[376px] rounded-2xl ;
+    justify-content: center;
+    background-color: #20172F;
+    margin: 70px auto 0;
+    position: relative;
+    padding:  40px 24px;
+    display: flex;
+   
   }
-
-  .balance-amount {
-    @apply text-white text-left text-[28px] not-italic font-semibold leading-10 tracking-[1.12px];
-
-    /* 142.857% */
+  .heading {
+    @apply flex justify-between items-center relative font-bold text-white text-[20px] ;
+    margin: auto;
+    margin-top: 10px;
   }
-
-  .balance-title-1 {
-    @apply text-white text-right text-sm not-italic font-normal leading-4 tracking-[0.28px];
-
-    /* 114.286% */
+  .deleteimage {
+    @apply flex items-center justify-between flex-col ;
+    margin-bottom: 40px;
   }
-
-  .balance-amount-1 {
-    @apply text-white text-right text-sm not-italic font-semibold leading-10 tracking-[0.56px];
-
-    /* 285.714% */
+  .text {
+    @apply text-white font-light leading-5 text-[20px]
   }
->>>>>>> 0615d13704047870412467d9a7ecc9704a653b32
+  .cancel-button {
+    @apply flex justify-center items-center gap-2.5 self-stretch border px-6 py-3.5 rounded-[100px] border-solid border-white w-[350px] h-10 text-white
+    font-normal leading-3 ;
+  }
+ 
+
 }
