@@ -197,4 +197,11 @@ body {
 
     /* 285.714% */
   }
+  .table-title {
+    @apply flex justify-between
+  }
+  .table-title-content {
+    @apply text-xl font-bold leading-6 tracking-normal text-left;
+    animation-delay: 200ms;
+  }
 }
