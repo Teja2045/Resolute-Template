@@ -3,7 +3,7 @@ import React from "react";
 
 const AccountDetails = () => {
   return (
-    <div className="account-details">
+    <div className="details-overview-card">
       <div className="network-data">
         <Image
           src="/akash.svg"
