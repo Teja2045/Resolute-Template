@@ -149,7 +149,7 @@ body {
   }
 
   .details-overview-card {
-    @apply w-full p-8 flex rounded-2xl items-center justify-between text-right text-[16px] bg-[#20372cbf];
+    @apply w-full p-8 flex rounded-2xl items-center justify-between text-right text-[16px] bg-[#2E2037BF];
   }
 
   .network-data {
