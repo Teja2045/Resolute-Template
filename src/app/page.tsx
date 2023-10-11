@@ -1,27 +1,18 @@
-import React from 'react'
+import React from "react";
+import HomeComponent from "./components/HomeComponent";
+import Image from "next/image";
+import AccountDetails from "./components/AccountDetails";
+import TopNav from "./components/TopNav";
+import BalanceOverview from "./components/BalanceOverview";
 
 const OverviewPage = () => {
   return (
-    <div>
-      <div>Overview</div>
-      <div>
-        <div>
-          address
-        </div>
-        <div>
-          <div>
-          public key
-          </div>
-          <div>
-            Account number
-          </div>
-          <div>
-            Serquence
-          </div>
-        </div>
-      </div>
+    <div className="page space-y-10">
+      <TopNav />
+      <AccountDetails />
+      <BalanceOverview />
     </div>
-  )
-}
+  );
+};
 
-export default OverviewPage
+export default OverviewPage;
