@@ -15,7 +15,7 @@ const OverviewPage = () => {
       <TopNav />
       <AccountDetails />
       <BalanceOverview />
-      <StakingPopup1 />
+      
     
       
      
