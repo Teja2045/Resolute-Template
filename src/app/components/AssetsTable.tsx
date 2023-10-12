@@ -16,7 +16,7 @@ const AssetsTable = () => {
         </thead>
         <tbody>
           {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((item, index) => (
-            <tr>
+            <tr key={index}>
               <td className="flex gap-2">
                 <div className="bg-[#3C3047] rounded-full h-[54px] w-[54px] flex justify-center items-center">
                   <Image
