@@ -151,7 +151,7 @@ body {
   }
 
   .customTable {
-    @apply w-full;
+    @apply w-full; 
   }
 
   .customTable td {
