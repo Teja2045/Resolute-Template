@@ -16,7 +16,7 @@ const AssetsTable = () => {
         </thead>
         <tbody>
           {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((item, index) => (
-            <tr key={index}>
+            <tr key={index} className="">
               <td className="flex gap-2">
                 <div className="bg-[#3C3047] rounded-full h-[54px] w-[54px] flex justify-center items-center">
                   <Image
@@ -30,8 +30,20 @@ const AssetsTable = () => {
               </td>
               <td>2 OSMO</td>
               <td>0.3 OSMO</td>
-              <td>$ 3.2 - 31.5%</td>
               <td>
+                <span  className="font-bold">$ 2.2</span>
+                <span className="pl-2 pr-1">
+                  <Image
+                    className="inline"
+                    src="./downarrow-filled.svg"
+                    width={16}
+                    height={16}
+                    alt="Price drop"
+                  />
+                </span>
+                <span className="text-[#E57575] font-semibold">3.5%</span>
+              </td>
+              <td className="flex gap-4">
                 <button className="customBtn">Claim</button>
                 <button className="customBtn customBtnDisabled">
                   Claim & Stake
