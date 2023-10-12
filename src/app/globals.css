@@ -204,4 +204,18 @@ body {
     @apply text-xl font-bold leading-6 tracking-normal text-left;
     animation-delay: 200ms;
   }
+  .staking-grid {
+    @apply grid grid-cols-3 gap-[24px];
+  }
+
+  .staking-grid-card {
+    @apply flex w-full flex-col items-start gap-6 p-6 rounded-2xl;
+    background-color: rgba(46, 32, 55, 0.75);
+  }
+
+  .staking-card-title {
+    @apply text-white text-base not-italic font-bold leading-3;
+    /* 75% */
+  }
+
 }
