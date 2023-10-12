@@ -90,7 +90,7 @@ body {
   }
 
   .sidebar {
-    @apply h-screen w-[260px] px-4 py-6;
+    @apply h-screen flex flex-col justify-between w-[260px] px-4 py-6;
     background: linear-gradient(180deg,
         #1f102d 25.28%,
         rgba(98, 76, 82, 0) 110.05%);
@@ -142,8 +142,31 @@ body {
   .topNav__options__networks__currentNetwork {
     @apply text-[14px] leading-3 text-white;
   }
-}
 
+  .customBtn {
+    @apply min-w-[140px] rounded-full border-[1px] text-[14px] leading-3 py-[14px] px-6;
+  }
+
+  .customBtnDisabled {
+    @apply border-[#B0B0B080] text-[#B0B0B080] hover:cursor-not-allowed;
+  }
+
+  .customTable {
+    @apply w-full;
+  }
+
+  .customTable td {
+    @apply pt-6 text-[14px] leading-3;
+  }
+
+  .customTableHead {
+    @apply pb-4 border-b-[0.5px] border-[#B0B0B033];
+  }
+
+  .customTableHead th {
+    @apply text-[16px] leading-3 font-normal h-10;
+  }
+}
 
 @layer components {
   .page {
@@ -198,12 +221,49 @@ body {
 
     /* 285.714% */
   }
+
   .table-title {
-    @apply flex justify-between
+    @apply flex justify-between;
   }
+
   .table-title-content {
     @apply text-xl font-bold leading-6 tracking-normal text-left;
     animation-delay: 200ms;
+  }
+
+
+  .staking-grid {
+    @apply grid grid-cols-4 gap-[24px];
+  }
+
+  .staking-grid-card {
+    @apply flex w-full flex-col items-start gap-6 p-6 rounded-2xl;
+    background-color: rgba(46, 32, 55, 0.75);
+  }
+
+  .staking-card-title {
+    @apply text-white text-base not-italic font-bold leading-3;
+    /* 75% */
+  }
+
+  .staking-card-content-heading {
+    @apply text-[#B0B0B0] text-xs not-italic font-normal leading-3 tracking-[0.48px];
+  }
+
+  .staking-card-content {
+    @apply text-white text-sm not-italic font-normal leading-3 tracking-[0.56px];
+  }
+
+  .staking-amount {
+    @apply text-white text-[28px] not-italic font-semibold leading-10 tracking-[1.12px] text-[#B0B0B0] text-[28px] not-italic font-semibold leading-10 tracking-[1.12px];
+    font-family: Inter;
+    /* 142.857% */
+    font-family: Inter;
+  }
+  .staking-amount-heading {
+    @apply text-[#B0B0B0] text-sm not-italic font-light leading-3 tracking-[0.56px];
+    font-family: Inter;
+    /* 85.714% */
   }
 }
 @layer components{
