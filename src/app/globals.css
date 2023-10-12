@@ -297,6 +297,68 @@ body {
     @apply flex justify-center items-center gap-2.5 self-stretch border px-6 py-3.5 rounded-[100px] border-solid border-white w-[350px] h-10 text-white
     font-normal leading-3 ;
   }
+  .Staking-box {
+    @apply flex w-[788px] h-[568px] flex-col justify-center items-start gap-10
+    backdrop-blur-[2px] px-6 py-10 rounded-2xl;
+    background: #20172F;
+  }
+  .staking-header {
+    @apply flex w-[700px] justify-center items-center gap-2 self-stretch;
+  }
+  .staking-header h2 {
+    @apply flex w-[89px] flex-col justify-center self-stretch text-white text-center text-xl not-italic font-bold leading-3;
+  }
+  .staking-text1 {
+    @apply text-white text-base not-italic font-bold leading-6;
+  }
+  .staking-text2 h2 {
+    @apply text-white text-sm not-italic font-bold leading-6 ;
+  }
+  .staking-points {
+   
+    @apply flex items-start gap-2 self-stretch border px-4 py-2 rounded-lg border-solid border-[rgba(176,176,176,0.20)] flex-col w-[740px] h-[104px];
+
+  }
+  .staking-points p {
+    @apply text-white text-sm not-italic font-light leading-6 self-stretch gap-2;
+    
+  }
+  .unavilable-delegation{
+    @apply flex flex-row gap-6 self-stretch;
+  }
+  .p {
+    @apply text-white text-base not-italic font-bold leading-6 gap-2;
+  }
+  .num {
+    @apply flex text-white text-base not-italic font-bold leading-6 text-start;
+  }
+  .staking-h {
+    @apply flex flex-col justify-center items-start gap-2 self-stretch;
+  }
+  .staking-Amo {
+    @apply text-white text-sm not-italic font-bold leading-6;
+  }
+  .holder {
+    @apply flex items-start gap-2 self-stretch border px-4 py-2 rounded-lg border-solid border-[rgba(176,176,176,0.20)];
+
+  }
+  .holder p {
+    @apply text-white text-sm not-italic font-light leading-6;
+  } 
+  .stake {
+    @apply text-end;
+  }
+  .staking-buttons {
+    @apply flex flex-row items-center gap-10 self-stretch w-full justify-between ;
+  }
+  .staking-cancel {
+    @apply flex justify-center items-center gap-2.5 self-stretch border px-6 py-3.5 rounded-[100px] border-solid border-white w-[350px] h-10 text-white
+    font-normal leading-3 ;
+  }
+  .undelegate {
+    @apply flex justify-center items-center gap-2.5 self-stretch border px-6 py-3.5 rounded-[100px] border-solid border-white w-[350px] h-10 text-white
+    font-normal leading-3 ;
+  }
  
 }
  

@@ -8,6 +8,11 @@ import AccountDetails from "./components/AccountDetails";
 import TopNav from "./components/TopNav";
 
 import BalanceOverview from "./components/BalanceOverview";
+import StakingPopup1 from './components/StakingPopup1';
+import Walletpage from './components/WalletPage';
+import DeletePopup from './components/DeletePopup';
+import LogoutPopup from './components/LogoutPopup';
+
 
 
 const OverviewPage = () => {
@@ -16,6 +21,9 @@ const OverviewPage = () => {
       <TopNav />
       <AccountDetails />
       <BalanceOverview />
+      <StakingPopup1 />
+    
+      
      
      
       
