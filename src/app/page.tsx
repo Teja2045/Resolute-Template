@@ -1,9 +1,9 @@
 import React from "react";
-import HomeComponent from "./components/HomeComponent";
 import Image from "next/image";
 import AccountDetails from "./components/AccountDetails";
 import TopNav from "./components/TopNav";
 import BalanceOverview from "./components/BalanceOverview";
+import AssetsTable from "./components/AssetsTable";
 
 const OverviewPage = () => {
   return (
@@ -20,6 +20,7 @@ const OverviewPage = () => {
           </div>
         </div>
       </div>
+      <AssetsTable />
     </div>
   );
 };
