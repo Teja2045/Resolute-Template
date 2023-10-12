@@ -283,4 +283,7 @@ body {
     font-family: Inter;
     /* 85.714% */
   }
+  .h-line {
+    @apply w-full h-px self-stretch bg-[#b0b0b033] ;
+  }
 }
