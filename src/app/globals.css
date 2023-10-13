@@ -439,6 +439,74 @@ body {
     @apply flex justify-center items-center gap-2.5 self-stretch border px-6 py-3.5 rounded-[100px] border-solid border-white w-[350px] h-10 text-white
     font-normal leading-3 ;
   }
- 
+  .staking-box2 {
+    @apply flex w-[788px] h-[528px] flex-col justify-center items-start gap-10 backdrop-blur-[2px] px-6 py-10 rounded-2xl;
+  background: #20172f;
+  }
+  .staking-head {
+    @apply flex flex-col justify-center items-start gap-6 self-stretch;
+  }
+  .Staking2-header {
+    @apply flex w-[700px] justify-center items-center gap-2 self-stretch;
+  }
+  .Staking2-header h2 {
+  @apply flex w-[89px] flex-col justify-center self-stretch text-white text-center text-xl not-italic font-bold leading-3;
+  }
+  .staking2-text p {
+    @apply text-white text-base not-italic font-bold leading-6;
+  }
+  .staking-head2 {
+    @apply flex flex-col items-center gap-6 self-stretch;
+  }
+  .head {
+    @apply flex flex-col justify-center items-start gap-2 flex-[1_0_0];
+  }
+  .para-h {
+    @apply text-white text-sm not-italic font-bold leading-6;
+  }
+  .para {
+    @apply flex items-start gap-2 self-stretch border px-4 py-2 rounded-lg border-solid border-[rgba(176,176,176,0.20)];
+  }
+  .para p {
+    @apply text-white text-sm not-italic font-light leading-6 self-stretch;
+  }
+  .un-delegation {
+    @apply flex flex-row gap-6 self-stretch my-6;
+  }
+  .p1 {
+    @apply text-white text-base not-italic font-bold leading-6 gap-2;
+  }
+  .num1 {
+    @apply flex text-white text-base not-italic font-bold leading-6 text-start;
+  }
+  .staking-h2 {
+    @apply flex flex-col justify-center items-start gap-2 self-stretch;
+  }
+  .staking-Amont {
+    @apply text-white text-sm not-italic font-bold leading-6;
+  }
+  .holder1 {
+    @apply flex items-start gap-2 self-stretch border px-4 py-2 rounded-lg border-solid border-[rgba(176,176,176,0.20)];
+
+  }
+  .holder p {
+    @apply text-white text-sm not-italic font-light leading-6;
+  } 
+  .stake2 {
+    @apply text-end;
+  }
+  .staking2-buttons {
+    @apply flex flex-row items-center gap-10 self-stretch w-full justify-between ;
+  }
+  .staking2-cancel {
+    @apply flex justify-center items-center gap-2.5 self-stretch border px-6 py-3.5 rounded-[100px] border-solid border-white w-[350px] h-10 text-white
+    font-normal leading-3 ;
+  }
+  .delegate {
+    @apply flex justify-center items-center gap-2.5 self-stretch border px-6 py-3.5 rounded-[100px] border-solid border-white w-[350px] h-10 text-white
+    font-normal leading-3 ;
+  }
+  
+  
 }
  
