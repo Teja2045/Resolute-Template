@@ -509,7 +509,71 @@ body {
     @apply flex justify-center items-center gap-2.5 self-stretch border px-6 py-3.5 rounded-[100px] border-solid border-white w-[350px] h-10 text-white
     font-normal leading-3 ;
   }
-  
-  
+  .staking-box3 {
+    @apply flex w-[788px] h-[520px] flex-col justify-center items-start gap-10 backdrop-blur-[2px] px-6 py-10 rounded-2xl;
+  background: #20172f;
+  }
+  .staking3-head {
+    @apply flex flex-col justify-center items-start gap-6 self-stretch;
+  }
+  .Staking2-header {
+    @apply flex w-[700px] justify-center items-center gap-2 self-stretch;
+  }
+  .staking2-text {
+    @apply text-white text-base not-italic font-bold leading-6;
+  }
+  .staking3-head2 {
+    @apply flex h-[72px] flex-col justify-center items-start gap-2 self-stretch;
+  }
+  .head3 {
+    @apply text-white text-sm not-italic font-bold leading-6;
+  }
+  .staking3-select {
+    @apply flex items-start w-[740px] h-10 gap-2 self-stretch border px-4 py-2 rounded-lg border-solid border-[rgba(176,176,176,0.20)];
+  }
+  .staking3-holder {
+    @apply flex w-[441.5px] items-start gap-2 items-center justify-between w-full;
+  }
+  .staking3-holder p{
+    @apply text-[#B0B0B0] text-sm not-italic font-light leading-6;
+  }
+  .staking3-head3{
+    @apply flex flex-col items-center gap-6 self-stretch;
+  }
+  .head4 {
+    @apply flex w-[740px] items-center gap-2;
+  }
+  .ps3 {
+    @apply text-white text-base not-italic font-bold leading-6;
+  }
+  .s3-num1 {
+    @apply text-white text-base not-italic font-bold leading-6;
+  }
+  .stake-head4 {
+    @apply flex flex-col justify-center items-start gap-2 self-stretch;
+  }
+  .stake-head4 p {
+    @apply text-white text-sm not-italic font-bold leading-6;
+  }
+  .holders3 {
+    @apply flex items-start gap-2 self-stretch border px-4 py-2 rounded-lg border-solid border-[rgba(176,176,176,0.20)];
+  }
+  .holders3 p {
+    @apply text-white text-sm not-italic font-light leading-6;
+  }
+  .stakes3 {
+    @apply items-end;
+  }
+  .staking3-buttons {
+    @apply flex flex-row items-center gap-10 self-stretch w-full justify-between ;
+  }
+  .staking3-cancel {
+    @apply flex justify-center items-center gap-2.5 self-stretch border px-6 py-3.5 rounded-[100px] border-solid border-white w-[350px] h-10 text-white
+    font-normal leading-3 ;
+  }
+  .delegates3 {
+    @apply flex justify-center items-center gap-2.5 self-stretch border px-6 py-3.5 rounded-[100px] border-solid border-white w-[350px] h-10 text-white
+    font-normal leading-3 ;
+  }
 }
  
