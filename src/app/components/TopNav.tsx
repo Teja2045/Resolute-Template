@@ -1,12 +1,13 @@
+'use client'
 import Image from "next/image";
 import React from "react";
 import NetworksMenu from "./NetworksMenu";
 
-const TopNav = () => {
+const TopNav = ({pathname}:{pathname:string}) => {
   return (
     <div className="topNav">
       <div className="topNav__title">
-        <h2>Overview</h2>
+        <h2>{pathname}</h2>
       </div>
       <div className="topNav__options">
           <NetworksMenu />

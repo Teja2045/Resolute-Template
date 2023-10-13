@@ -13,7 +13,6 @@ import AssetsTable from "./components/AssetsTable";
 const OverviewPage = () => {
   return (
     <div className="page space-y-10 relative">
-      <TopNav />
       <AccountDetails />
       <BalanceOverview />
     
@@ -23,8 +22,18 @@ const OverviewPage = () => {
         <div className="table-title">
           <div className="table-title-content">Asset Information</div>
           <div className="flex">
-            <Image src="/tableView.svg" height={32} width={32} alt="table view"></Image>
-            <Image src="/chartView.svg" height={32} width={32} alt="chart view"></Image>
+            <Image
+              src="/tableView.svg"
+              height={32}
+              width={32}
+              alt="table view"
+            ></Image>
+            <Image
+              src="/chartView.svg"
+              height={32}
+              width={32}
+              alt="chart view"
+            ></Image>
           </div>
         </div>
       </div>
