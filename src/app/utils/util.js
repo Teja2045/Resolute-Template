@@ -51,3 +51,9 @@ export const cleanURL = (url) => {
   }
   return "";
 };
+
+export const getSelectedPartFromURL = (urlParts) => {
+  if(urlParts.length === 1 ) return 'Overview'
+  if(urlParts[1]==='staking') return 'Staking'
+  return 'Overview';
+}
