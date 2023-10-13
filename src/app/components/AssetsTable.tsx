@@ -7,11 +7,11 @@ const AssetsTable = () => {
       <table className="customTable overflow-y-scroll">
         <thead className="customTableHead">
           <tr className="text-left">
-            <th>Network</th>
-            <th>StakeAmount</th>
-            <th>Rewards</th>
-            <th>Price</th>
-            <th>Actions</th>
+            <th className="w-1/4">Network</th>
+            <th className="w-1/6">StakeAmount</th>
+            <th className="w-1/6">Rewards</th>
+            <th className="w-1/6">Price</th>
+            <th className="">Actions</th>
           </tr>
         </thead>
         <tbody>
