@@ -575,5 +575,77 @@ body {
     @apply flex justify-center items-center gap-2.5 self-stretch border px-6 py-3.5 rounded-[100px] border-solid border-white w-[350px] h-10 text-white
     font-normal leading-3 ;
   }
+  .Fregrant-box1 {
+    @apply flex w-[788px] h-[404px] flex-col justify-center items-start gap-10 backdrop-blur-[2px] px-6 py-10 rounded-2xl;
+  background: #20172f;
+  }
+  .Fregrant1 {
+    @apply flex justify-center items-center gap-2 flex-[1_0_0] self-stretch;
+  }
+  .Fregrant1 h2 {
+    @apply text-white text-center text-xl not-italic font-bold leading-3 flex w-52 flex-col justify-center self-stretch;
+  }
+  .Fregrant1-Head {
+  @apply flex flex-col items-center gap-10 self-stretch;
+  }
+  .Fregrant1-Head1 {
+    @apply flex justify-between gap-10 self-stretch;
+  }
+  .head1 {
+    @apply  justify-center items-start space-y-2 self-stretch;
+  }
+  .head1-first {
+    @apply flex w-[340px] h-[24px] flex-col justify-center items-start gap-2 self-stretch text-white text-sm not-italic font-bold leading-6;
+  }
+  .head1-second {
+    /* @apply flex flex-col justify-center items-start gap-2 self-stretch text-white text-sm not-italic font-bold leading-6; */
+    @apply flex items-center w-[183px] h-6 text-right  mr-2 justify-center text-white text-sm not-italic font-normal leading-10 tracking-[0.56px];
+  }
+  .head1-main {
+    @apply flex flex-row;
+  }
+  .headf2 {
+    @apply  justify-center items-start space-y-2 self-stretch;
+  }
+  .headf2-first {
+    @apply flex w-[340px] h-[24px] flex-col justify-center items-start gap-2 self-stretch text-white text-sm not-italic font-bold leading-6;
+  }
+  .headf2-second {
+    @apply flex items-center w-[183px] h-6 text-right  mr-2 justify-center text-white text-sm not-italic font-normal leading-10 tracking-[0.56px];
+  }
+  .headf2-main {
+    @apply flex flex-row;
+  }
+  .Fregrant1-Head2 {
+    @apply flex justify-between gap-10 self-stretch;
+  }
+  .headf {
+    @apply  justify-center items-start space-y-2 self-stretch;
+  }
+  .headf-first {
+    @apply flex flex-col justify-center items-start gap-2 self-stretch text-white text-sm not-italic font-bold leading-6;
+  }
+  .headf-second {
+    @apply flex flex-col justify-center items-start gap-2 self-stretch text-white text-sm not-italic font-light leading-6 tracking-[0.56px];;
+  }
+  .headf-main {
+    @apply flex flex-row;
+  }
+  .headfpop {
+    @apply  justify-center items-start space-y-2 self-stretch;
+  }
+  .headfpop-first {
+    @apply flex w-[340px] h-[24px] flex-col justify-center items-start gap-2 self-stretch text-white text-sm not-italic font-bold leading-6;
+  }
+  .headfpop-second { 
+    @apply flex flex-col justify-center items-start gap-2 self-stretch text-white text-sm not-italic font-light leading-6;
+  }
+  .headfpop-main {
+    @apply flex flex-row; 
+  }
+  .Fregrant-dismiss {
+    @apply text-white text-center text-xl not-italic font-bold leading-5 underline self-stretch;
+  }
+
 }
  

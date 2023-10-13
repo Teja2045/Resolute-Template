@@ -5,10 +5,9 @@ import React from "react";
 import Image from "next/image";
 import AccountDetails from "./components/AccountDetails";
 import TopNav from "./components/TopNav";
-
 import BalanceOverview from "./components/BalanceOverview";
 import AssetsTable from "./components/AssetsTable";
-import StakingPopup3 from './components/StakingPopup3';
+
 
 
 const OverviewPage = () => {
@@ -17,7 +16,7 @@ const OverviewPage = () => {
       <TopNav />
       <AccountDetails />
       <BalanceOverview />
-      <StakingPopup3 />
+    
      
       
       <div className="space-y-6">
