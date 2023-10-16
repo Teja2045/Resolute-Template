@@ -46,7 +46,7 @@ const menuItems = [
   {
     name: "Groups",
     icon: "/groups-icon.svg",
-    link: "/g",
+    link: "/groups",
   },
 ];
 
