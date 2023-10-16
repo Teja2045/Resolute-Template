@@ -41,7 +41,7 @@ const menuItems = [
   {
     name: "Feegrant",
     icon: "/feegrant-icon.svg",
-    link: "/f",
+    link: "/feegrant",
   },
   {
     name: "Groups",
