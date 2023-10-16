@@ -4,52 +4,56 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React from "react";
+import TopNav from "./TopNav";
+import { getSelectedPartFromURL } from "../utils/util";
 
 const menuItems = [
   {
     name: "Overview",
     icon: "/overview-icon.svg",
-    link : '/'
+    link: "/",
   },
   {
     name: "Transfers",
     icon: "/transfers-icon.svg",
-    link : '/a'
+    link: "/a",
   },
   {
     name: "Governance",
     icon: "/gov-icon.svg",
-    link : '/b'
+    link: "/b",
   },
   {
     name: "Staking",
     icon: "/staking-icon.svg",
-    link : '/staking'
+    link: "/staking",
   },
   {
     name: "Multisig",
     icon: "/multisig-icon.svg",
-    link : '/d'
+    link: "/d",
   },
   {
     name: "Authz",
     icon: "/authz-icon.svg",
-    link : '/e'
+    link: "/e",
   },
   {
     name: "Feegrant",
     icon: "/feegrant-icon.svg",
-    link : '/f'
+    link: "/f",
   },
   {
     name: "Groups",
     icon: "/groups-icon.svg",
-    link : '/g'
+    link: "/g",
   },
 ];
 
 const PermanentSidebar = ({ children }: { children: React.ReactNode }) => {
   const pathname = usePathname();
+  const pathParts = pathname.split("/");
+  const selectedPart = getSelectedPartFromURL(pathParts);
   return (
     <div className="flex bg-[#1F102D99]">
       <div className="sidebar">
@@ -63,7 +67,7 @@ const PermanentSidebar = ({ children }: { children: React.ReactNode }) => {
           <div className="flex flex-col gap-4">
             {menuItems.map((item, index) => (
               <MenuItem
-                pathname={pathname}
+                pathname={selectedPart}
                 key={index}
                 itemName={item.name}
                 icon={item.icon}
@@ -77,13 +81,16 @@ const PermanentSidebar = ({ children }: { children: React.ReactNode }) => {
           <div className="sidebar__footer__border"></div>
           <div className="sidebar__footer__authz">
             <div>Authz Mode</div>
-            <div>
-              Toggle
-            </div>
+            <div>Toggle</div>
           </div>
         </div>
       </div>
       <div className="flex flex-col items-center overflow-y-scroll no-scrollbar h-screen w-screen text-white">
+        <div className="w-full">
+          <div className=" mx-10 mt-10">
+            <TopNav pathname={selectedPart} />
+          </div>
+        </div>
         {children}
       </div>
     </div>
@@ -97,7 +104,7 @@ const MenuItem = ({
   itemName,
   icon,
   selected,
-  link
+  link,
 }: {
   pathname: string;
   itemName: string;
@@ -105,10 +112,12 @@ const MenuItem = ({
   selected: boolean;
   link: string;
 }) => {
+  pathname = pathname.toLowerCase();
+  pathname = pathname === "overview" ? "/" : `/${pathname}`;
   return (
     <Link
       className={`sidebar__menu__item ${
-        pathname===link ? "sidebar__menu__item-selected" : ""
+        pathname === link ? "sidebar__menu__item-selected" : ""
       }`}
       href={link}
     >

@@ -1,29 +1,16 @@
+'use client'
 import Image from "next/image";
 import React from "react";
+import NetworksMenu from "./NetworksMenu";
 
-const TopNav = () => {
+const TopNav = ({pathname}:{pathname:string}) => {
   return (
     <div className="topNav">
       <div className="topNav__title">
-        <h2>Overview</h2>
+        <h2>{pathname}</h2>
       </div>
       <div className="topNav__options">
-        <div className="topNav__options__networks">
-          <div className="flex items-center gap-2">
-            <Image
-              src="./all-networks-icon.svg"
-              width={24}
-              height={24}
-              alt="All Networks"
-            />
-            <div className="topNav__options__networks__currentNetwork">
-              All Networks
-            </div>
-          </div>
-          <div>
-            <Image src='./down-arrow-icon.svg' width={24} height={24} alt="Select Network" />
-          </div>
-        </div>
+          <NetworksMenu />
         <div className="topNav__options__logout">
           <Image src="./logout-icon.svg" width={40} height={40} alt="Logout" />
         </div>
