@@ -16,12 +16,12 @@ const menuItems = [
   {
     name: "Transfers",
     icon: "/transfers-icon.svg",
-    link: "/a",
+    link: "/transfers",
   },
   {
     name: "Governance",
     icon: "/gov-icon.svg",
-    link: "/b",
+    link: "/governance",
   },
   {
     name: "Staking",
@@ -31,12 +31,12 @@ const menuItems = [
   {
     name: "Multisig",
     icon: "/multisig-icon.svg",
-    link: "/d",
+    link: "/multisig",
   },
   {
     name: "Authz",
     icon: "/authz-icon.svg",
-    link: "/e",
+    link: "/authz",
   },
   {
     name: "Feegrant",
