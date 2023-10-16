@@ -144,7 +144,7 @@ body {
   }
 
   .networksMenu {
-    @apply absolute top-[86px] right-[104px] bg-[#3C3047] rounded-lg w-[200px] py-1;
+    @apply absolute top-[46px] right-[64px] bg-[#3C3047] rounded-lg w-[200px] py-1;
   }
 
   .networkItem {

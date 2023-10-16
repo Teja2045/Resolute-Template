@@ -53,7 +53,15 @@ export const cleanURL = (url) => {
 };
 
 export const getSelectedPartFromURL = (urlParts) => {
-  if(urlParts.length === 1 ) return 'Overview'
-  if(urlParts[1]==='staking') return 'Staking'
-  return 'Overview';
-}
+  if (urlParts.length === 1) return "Overview";
+  switch (urlParts[1]) {
+    case "staking":
+      return "Staking";
+    case "feegrant":
+      return "Feegrant";
+    case "groups":
+      return "Groups";
+    default:
+      return "Overview";
+  }
+};
