@@ -8,7 +8,7 @@ const AssetsTable = () => {
         <thead className="customTableHead">
           <tr className="text-left">
             <th className="w-1/4">Network</th>
-            <th className="w-1/6">StakeAmount</th>
+            <th className="w-1/5">StakeAmount</th>
             <th className="w-1/6">Rewards</th>
             <th className="w-1/6">Price</th>
             <th className="">Actions</th>
@@ -43,7 +43,7 @@ const AssetsTable = () => {
                 </span>
                 <span className="text-[#E57575] font-semibold">3.5%</span>
               </td>
-              <td className="flex gap-4">
+              <td className="flex justify-between">
                 <button className="customBtn">Claim</button>
                 <button className="customBtn customBtnDisabled">
                   Claim & Stake
