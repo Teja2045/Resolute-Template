@@ -1,8 +1,25 @@
+"use client";
+import { Divider, Pagination, PaginationItem } from "@mui/material";
 import Image from "next/image";
-import React from "react";
+import React, { useEffect, useState } from "react";
+import ArrowBackIcon from "@mui/icons-material/ArrowBack";
+import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 
 const ValidatorsTable = () => {
-    
+  const [validators, setValidators] = useState<number[]>([
+    1, 2, 3, 4, 5, 6, 7, 8, 9, 10,
+  ]);
+  const [slicedValidators, setSlicedValidators] = useState<number[]>([]);
+  const [currentPage, setCurrentPage] = useState(1);
+  const PER_PAGE = 5;
+  useEffect(() => {
+    if (validators.length < PER_PAGE) {
+      setSlicedValidators(validators);
+    } else {
+      setCurrentPage(1);
+      setSlicedValidators(validators?.slice(0, 1 * PER_PAGE));
+    }
+  }, [validators]);
   return (
     <div>
       <table className="customTable overflow-y-scroll">
@@ -17,7 +34,7 @@ const ValidatorsTable = () => {
           </tr>
         </thead>
         <tbody>
-          {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((item, index) => (
+          {slicedValidators.map((item, index) => (
             <tr key={index} className="">
               <td>01</td>
               <td className="flex gap-2">
@@ -67,9 +84,7 @@ const ValidatorsTable = () => {
                   )}
                 </div>
               </td>
-              <td>
-                20%
-              </td>
+              <td>20%</td>
               <td>
                 <button className="customBtn">Claim</button>
               </td>
@@ -77,6 +92,24 @@ const ValidatorsTable = () => {
           ))}
         </tbody>
       </table>
+
+      {validators.length > 0 ? (
+        <div className="flex justify-end">
+          <Pagination
+            sx={{
+              mt: 1,
+            }}
+            count={Math.ceil(validators.length / PER_PAGE)}
+            shape="circular"
+            onChange={(_, v) => {
+              setCurrentPage(v);
+              setSlicedValidators(
+                validators?.slice((v - 1) * PER_PAGE, v * PER_PAGE)
+              );
+            }}
+          />
+        </div>
+      ) : null}
     </div>
   );
 };
