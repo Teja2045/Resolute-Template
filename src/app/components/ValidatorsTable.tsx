@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 
 const ValidatorsTable = () => {
+    
   return (
     <div>
       <table className="customTable overflow-y-scroll">
@@ -20,15 +21,15 @@ const ValidatorsTable = () => {
             <tr key={index} className="">
               <td>01</td>
               <td className="flex gap-2">
-                <div className="bg-[#3C3047] rounded-full h-[54px] w-[54px] flex justify-center items-center">
+                <div className="bg-[#3C3047] rounded-full h-[40px] w-[40px] flex justify-center items-center">
                   <Image
                     src="./osmosis-logo.svg"
-                    height={42}
-                    width={42}
+                    height={31}
+                    width={31}
                     alt="osmosis-logo"
                   />
                 </div>
-                <div className="my-auto">1.23 OSMO</div>
+                <div className="my-auto">Polkachu</div>
               </td>
               <td>11,242,352,314</td>
               <td>
@@ -66,11 +67,11 @@ const ValidatorsTable = () => {
                   )}
                 </div>
               </td>
-              <td className="flex gap-4">
+              <td>
+                20%
+              </td>
+              <td>
                 <button className="customBtn">Claim</button>
-                <button className="customBtn customBtnDisabled">
-                  Claim & Stake
-                </button>
               </td>
             </tr>
           ))}
