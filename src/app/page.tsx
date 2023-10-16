@@ -11,11 +11,13 @@ import AssetsTable from "./components/AssetsTable";
 
 
 
+
 const OverviewPage = () => {
   return (
     <div className="page space-y-10 relative">
       <AccountDetails />
       <BalanceOverview />
+      
       
     
      
