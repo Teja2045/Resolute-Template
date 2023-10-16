@@ -41,7 +41,7 @@ const menuItems = [
   {
     name: "Feegrant",
     icon: "/feegrant-icon.svg",
-    link: "/f",
+    link: "/feegrant",
   },
   {
     name: "Groups",
@@ -87,7 +87,7 @@ const PermanentSidebar = ({ children }: { children: React.ReactNode }) => {
       </div>
       <div className="flex flex-col items-center overflow-y-scroll no-scrollbar h-screen w-screen text-white">
         <div className="w-full">
-          <div className=" mx-10 mt-10">
+          <div className=" mx-10 mt-10 relative">
             <TopNav pathname={selectedPart} />
           </div>
         </div>
