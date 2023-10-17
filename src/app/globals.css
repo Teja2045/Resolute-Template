@@ -274,14 +274,9 @@ body {
 
   .staking-amount {
     @apply text-white text-[28px] not-italic font-semibold leading-10 tracking-[1.12px] text-[#B0B0B0] text-[28px] not-italic font-semibold leading-10 tracking-[1.12px];
-    font-family: Inter;
-    /* 142.857% */
-    font-family: Inter;
   }
   .staking-amount-heading {
     @apply text-[#B0B0B0] text-sm not-italic font-light leading-3 tracking-[0.56px];
-    font-family: Inter;
-    /* 85.714% */
   }
   .h-line {
     @apply w-full h-px self-stretch bg-[#b0b0b033] ;
