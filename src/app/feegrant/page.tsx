@@ -1,5 +1,5 @@
 import React from "react";
-import Feegrants from "../components/tabs/Feegrants";
+import Feegrants from "../../components/tabs/Feegrants";
 
 const page = () => {
   return (

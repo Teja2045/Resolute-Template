@@ -1,8 +1,8 @@
 import React from "react";
-import StakingCards from "../components/StakingCards";
-import StakedAmount from "../components/StakedAmount";
-import StakedAmountWithActions from "../components/StakedAmountWithActions";
-import ValidatorsTable from "../components/ValidatorsTable";
+import StakingCards from "../../components/StakingCards";
+import StakedAmount from "../../components/StakedAmount";
+import StakedAmountWithActions from "../../components/StakedAmountWithActions";
+import ValidatorsTable from "../../components/ValidatorsTable";
 
 const page = () => {
   return (
