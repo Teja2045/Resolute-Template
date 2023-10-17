@@ -61,6 +61,12 @@ export const getSelectedPartFromURL = (urlParts) => {
       return "Feegrant";
     case "groups":
       return "Groups";
+    case "authz":
+      return "Authz";
+    case "multisig":
+      return "Multisig";
+    case "transfers":
+      return "Transfers";
     default:
       return "Overview";
   }
