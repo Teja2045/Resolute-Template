@@ -3,10 +3,10 @@
 import { usePathname } from 'next/navigation'
 import React from "react";
 import Image from "next/image";
-import AccountDetails from "./components/AccountDetails";
-import TopNav from "./components/TopNav";
-import BalanceOverview from "./components/BalanceOverview";
-import AssetsTable from "./components/AssetsTable";
+import AccountDetails from "./../components/AccountDetails";
+import TopNav from "./../components/TopNav";
+import BalanceOverview from "./../components/BalanceOverview";
+import AssetsTable from "./../components/AssetsTable";
 
 
 

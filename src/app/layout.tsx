@@ -1,8 +1,8 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import PermanentSideBar from "./components/PermanentSidebar";
-import { ConnectWalletButton } from "./components/ConnectWalletButton";
+import PermanentSideBar from "../components/PermanentSidebar";
+import { ConnectWalletButton } from "../components/ConnectWalletButton";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,7 +23,7 @@ export default function RootLayout({
           <div className="layout">
             <ConnectWalletButton>
               <PermanentSideBar> {children}</PermanentSideBar>
-            </ConnectWalletButton> 
+            </ConnectWalletButton>
           </div>
         }
       </body>
