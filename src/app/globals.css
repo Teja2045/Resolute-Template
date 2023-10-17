@@ -8,6 +8,7 @@ body {
   @apply leading-[normal] m-0;
 }
 
+
 *,
 ::before,
 ::after {
@@ -63,6 +64,7 @@ body {
   .resolute__title {
     @apply relative flex gap-[140px] text-white text-[150px] font-bold leading-[175px] tracking-[6px];
   }
+
 
   .resolute__title img {
     @apply absolute left-[170px] bottom-[-20px];
@@ -216,7 +218,6 @@ body {
   .account-metadata__content {
     @apply text-white text-right text-base font-normal leading-[40px] tracking-[0.56px];
   }
-
   .balance-title {
     @apply text-white text-xl not-italic font-bold leading-3 tracking-[0.8px];
 
@@ -250,6 +251,7 @@ body {
     animation-delay: 200ms;
   }
 
+
   .staking-grid {
     @apply grid grid-cols-4 gap-[24px];
   }
@@ -282,3 +284,464 @@ body {
     @apply w-full h-px self-stretch bg-[#b0b0b033] ;
   }
 }
+@layer components{
+  .custom-box {
+    @apply w-[1102px] h-[300px] rounded-2xl;
+    justify-content: center;
+    background-color: #20172F;
+    margin: 70px auto 0;
+    position: relative;
+    padding: 24px;
+    display: flex;
+    margin-top: 40px;
+
+  }
+
+  .header {
+    @apply flex justify-between items-center relative;
+
+  }
+
+  .header img {
+    @apply absolute right-0
+  }
+
+  .header h2 {
+    @apply flex-col font-bold text-white text-[20px];
+    margin: auto;
+  }
+
+  .container {
+    @apply flex w-full justify-between mt-10;
+    padding: 0 180px;
+  }
+
+  .text {
+    @apply font-bold text-white items-center text-center leading-3 text-[20px] h-10 flex;
+  }
+
+  .wallet {
+    @apply flex flex-col justify-center items-center
+  }
+  .rectangle-box {
+    @apply w-[788px] h-[376px] rounded-2xl ;
+    justify-content: center;
+    background-color: #20172F;
+    margin: 70px auto 0;
+    position: relative;
+    padding:  40px 24px;
+    display: flex;
+   
+  }
+  .heading {
+    @apply flex justify-between items-center relative font-bold text-white text-[20px] ;
+    margin: auto;
+    margin-top: 10px;
+  }
+  .deleteimage {
+    @apply flex items-center justify-between flex-col ;
+    margin-bottom: 40px;
+  }
+  .text {
+    @apply text-white font-light leading-5 text-[20px]
+  }
+  .cancel-button {
+    @apply flex justify-center items-center gap-2.5 self-stretch border px-6 py-3.5 rounded-[100px] border-solid border-white w-[350px] h-10 text-white
+    font-normal leading-3 ;
+  }
+  .Logout-box {
+    @apply flex w-[788px] h-[376px] flex-col justify-center items-start gap-10 relative
+    backdrop-blur-[2px] px-6 py-10 rounded-2xl;
+    background: #20172F;
+
+  }
+  .title {
+    @apply flex justify-between items-center relative font-bold text-white text-[20px] leading-3 ;
+    margin: auto;
+    margin-top: 10px;
+  }
+  .Logoutimage {
+    @apply flex items-center justify-between flex-col gap-4 w-full;
+   
+  }
+  .Logout-text {
+    @apply text-white text-center not-italic font-light leading-5 text-[20px] ;
+  }
+  .cancel1-button {
+    @apply flex justify-center items-center gap-2.5 self-stretch border px-6 py-3.5 rounded-[100px] border-solid border-white w-[350px] h-10 text-white
+    font-normal leading-3 ;
+  }
+  .Logout-button {
+    @apply flex justify-center items-center gap-2.5 self-stretch border px-6 py-3.5 rounded-[100px] border-solid border-white w-[350px] h-10 text-white
+    font-normal leading-3 ;
+  }
+  .Staking-box {
+    @apply flex w-[788px] h-[568px] flex-col justify-center items-start gap-10
+    backdrop-blur-[2px] px-6 py-10 rounded-2xl;
+    background: #20172F;
+  }
+  .staking-header {
+    @apply flex w-[700px] justify-center items-center gap-2 self-stretch;
+  }
+  .staking-header h2 {
+    @apply flex w-[89px] flex-col justify-center self-stretch text-white text-center text-xl not-italic font-bold leading-3;
+  }
+  .staking-text1 {
+    @apply text-white text-base not-italic font-bold leading-6;
+  }
+  .staking-text2 h2 {
+    @apply text-white text-sm not-italic font-bold leading-6 ;
+  }
+  .staking-points {
+   
+    @apply flex items-start gap-2 self-stretch border px-4 py-2 rounded-lg border-solid border-[rgba(176,176,176,0.20)] flex-col w-[740px] h-[104px];
+
+  }
+  .staking-points p {
+    @apply text-white text-sm not-italic font-light leading-6 self-stretch gap-2;
+    
+  }
+  .unavilable-delegation{
+    @apply flex flex-row gap-6 self-stretch;
+  }
+  .p {
+    @apply text-white text-base not-italic font-bold leading-6 gap-2;
+  }
+  .num {
+    @apply flex text-white text-base not-italic font-bold leading-6 text-start;
+  }
+  .staking-h {
+    @apply flex flex-col justify-center items-start gap-2 self-stretch;
+  }
+  .staking-Amo {
+    @apply text-white text-sm not-italic font-bold leading-6;
+  }
+  .holder {
+    @apply flex items-start gap-2 self-stretch border px-4 py-2 rounded-lg border-solid border-[rgba(176,176,176,0.20)];
+
+  }
+  .holder p {
+    @apply text-white text-sm not-italic font-light leading-6;
+  } 
+  .stake {
+    @apply text-end;
+  }
+  .staking-buttons {
+    @apply flex flex-row items-center gap-10 self-stretch w-full justify-between ;
+  }
+  .staking-cancel {
+    @apply flex justify-center items-center gap-2.5 self-stretch border px-6 py-3.5 rounded-[100px] border-solid border-white w-[350px] h-10 text-white
+    font-normal leading-3 ;
+  }
+  .undelegate {
+    @apply flex justify-center items-center gap-2.5 self-stretch border px-6 py-3.5 rounded-[100px] border-solid border-white w-[350px] h-10 text-white
+    font-normal leading-3 ;
+  }
+  .staking-box2 {
+    @apply flex w-[788px] h-[528px] flex-col justify-center items-start gap-10 backdrop-blur-[2px] px-6 py-10 rounded-2xl;
+  background: #20172f;
+  }
+  .staking-head {
+    @apply flex flex-col justify-center items-start gap-6 self-stretch;
+  }
+  .Staking2-header {
+    @apply flex w-[700px] justify-center items-center gap-2 self-stretch;
+  }
+  .Staking2-header h2 {
+  @apply flex w-[89px] flex-col justify-center self-stretch text-white text-center text-xl not-italic font-bold leading-3;
+  }
+  .staking2-text p {
+    @apply text-white text-base not-italic font-bold leading-6;
+  }
+  .staking-head2 {
+    @apply flex flex-col items-center gap-6 self-stretch;
+  }
+  .head {
+    @apply flex flex-col justify-center items-start gap-2 flex-[1_0_0];
+  }
+  .para-h {
+    @apply text-white text-sm not-italic font-bold leading-6;
+  }
+  .para {
+    @apply flex items-start gap-2 self-stretch border px-4 py-2 rounded-lg border-solid border-[rgba(176,176,176,0.20)];
+  }
+  .para p {
+    @apply text-white text-sm not-italic font-light leading-6 self-stretch;
+  }
+  .un-delegation {
+    @apply flex flex-row gap-6 self-stretch my-6;
+  }
+  .p1 {
+    @apply text-white text-base not-italic font-bold leading-6 gap-2;
+  }
+  .num1 {
+    @apply flex text-white text-base not-italic font-bold leading-6 text-start;
+  }
+  .staking-h2 {
+    @apply flex flex-col justify-center items-start gap-2 self-stretch;
+  }
+  .staking-Amont {
+    @apply text-white text-sm not-italic font-bold leading-6;
+  }
+  .holder1 {
+    @apply flex items-start gap-2 self-stretch border px-4 py-2 rounded-lg border-solid border-[rgba(176,176,176,0.20)];
+
+  }
+  .holder p {
+    @apply text-white text-sm not-italic font-light leading-6;
+  } 
+  .stake2 {
+    @apply text-end;
+  }
+  .staking2-buttons {
+    @apply flex flex-row items-center gap-10 self-stretch w-full justify-between ;
+  }
+  .staking2-cancel {
+    @apply flex justify-center items-center gap-2.5 self-stretch border px-6 py-3.5 rounded-[100px] border-solid border-white w-[350px] h-10 text-white
+    font-normal leading-3 ;
+  }
+  .delegate {
+    @apply flex justify-center items-center gap-2.5 self-stretch border px-6 py-3.5 rounded-[100px] border-solid border-white w-[350px] h-10 text-white
+    font-normal leading-3 ;
+  }
+  .staking-box3 {
+    @apply flex w-[788px] h-[520px] flex-col justify-center items-start gap-10 backdrop-blur-[2px] px-6 py-10 rounded-2xl;
+  background: #20172f;
+  }
+  .staking3-head {
+    @apply flex flex-col justify-center items-start gap-6 self-stretch;
+  }
+  .Staking2-header {
+    @apply flex w-[700px] justify-center items-center gap-2 self-stretch;
+  }
+  .staking2-text {
+    @apply text-white text-base not-italic font-bold leading-6;
+  }
+  .staking3-head2 {
+    @apply flex h-[72px] flex-col justify-center items-start gap-2 self-stretch;
+  }
+  .head3 {
+    @apply text-white text-sm not-italic font-bold leading-6;
+  }
+  .staking3-select {
+    @apply flex items-start w-[740px] h-10 gap-2 self-stretch border px-4 py-2 rounded-lg border-solid border-[rgba(176,176,176,0.20)];
+  }
+  .staking3-holder {
+    @apply flex w-[441.5px] items-start gap-2 items-center justify-between w-full;
+  }
+  .staking3-holder p{
+    @apply text-[#B0B0B0] text-sm not-italic font-light leading-6;
+  }
+  .staking3-head3{
+    @apply flex flex-col items-center gap-6 self-stretch;
+  }
+  .head4 {
+    @apply flex w-[740px] items-center gap-2;
+  }
+  .ps3 {
+    @apply text-white text-base not-italic font-bold leading-6;
+  }
+  .s3-num1 {
+    @apply text-white text-base not-italic font-bold leading-6;
+  }
+  .stake-head4 {
+    @apply flex flex-col justify-center items-start gap-2 self-stretch;
+  }
+  .stake-head4 p {
+    @apply text-white text-sm not-italic font-bold leading-6;
+  }
+  .holders3 {
+    @apply flex items-start gap-2 self-stretch border px-4 py-2 rounded-lg border-solid border-[rgba(176,176,176,0.20)];
+  }
+  .holders3 p {
+    @apply text-white text-sm not-italic font-light leading-6;
+  }
+  .stakes3 {
+    @apply items-end;
+  }
+  .staking3-buttons {
+    @apply flex flex-row items-center gap-10 self-stretch w-full justify-between ;
+  }
+  .staking3-cancel {
+    @apply flex justify-center items-center gap-2.5 self-stretch border px-6 py-3.5 rounded-[100px] border-solid border-white w-[350px] h-10 text-white
+    font-normal leading-3 ;
+  }
+  .delegates3 {
+    @apply flex justify-center items-center gap-2.5 self-stretch border px-6 py-3.5 rounded-[100px] border-solid border-white w-[350px] h-10 text-white
+    font-normal leading-3 ;
+  }
+  .Fregrant-box1 {
+    @apply flex w-[788px] h-[404px] flex-col justify-center items-start gap-10 backdrop-blur-[2px] px-6 py-10 rounded-2xl;
+  background: #20172f;
+  }
+  .Fregrant1 {
+    @apply flex justify-center items-center gap-2 flex-[1_0_0] self-stretch;
+  }
+  .Fregrant1 h2 {
+    @apply text-white text-center text-xl not-italic font-bold leading-3 flex w-52 flex-col justify-center self-stretch;
+  }
+  .Fregrant1-Head {
+  @apply flex flex-col items-center gap-10 self-stretch;
+  }
+  .Fregrant1-Head1 {
+    @apply flex justify-between gap-10 self-stretch;
+  }
+  .head1 {
+    @apply  justify-center items-start space-y-2 self-stretch;
+  }
+  .head1-first {
+    @apply flex w-[340px] h-[24px] flex-col justify-center items-start gap-2 self-stretch text-white text-sm not-italic font-bold leading-6;
+  }
+  .head1-second {
+    @apply flex items-center w-[183px] h-6 text-right  mr-2 justify-center text-white text-sm not-italic font-normal leading-10 tracking-[0.56px];
+  }
+  .head1-main {
+    @apply flex flex-row;
+  }
+  .headf2 {
+    @apply  justify-center items-start space-y-2 self-stretch;
+  }
+  .headf2-first {
+    @apply flex w-[340px] h-[24px] flex-col justify-center items-start gap-2 self-stretch text-white text-sm not-italic font-bold leading-6;
+  }
+  .headf2-second {
+    @apply flex items-center w-[183px] h-6 text-right  mr-2 justify-center text-white text-sm not-italic font-normal leading-10 tracking-[0.56px];
+  }
+  .headf2-main {
+    @apply flex flex-row;
+  }
+  .Fregrant1-Head2 {
+    @apply flex justify-between gap-10 self-stretch;
+  }
+  .headf {
+    @apply  justify-center items-start space-y-2 self-stretch;
+  }
+  .headf-first {
+    @apply flex flex-col justify-center items-start gap-2 self-stretch text-white text-sm not-italic font-bold leading-6;
+  }
+  .headf-second {
+    @apply flex flex-col justify-center items-start gap-2 self-stretch text-white text-sm not-italic font-light leading-6 tracking-[0.56px];;
+  }
+  .headf-main {
+    @apply flex flex-row;
+  }
+  .headfpop {
+    @apply  justify-center items-start space-y-2 self-stretch;
+  }
+  .headfpop-first {
+    @apply flex w-[340px] h-[24px] flex-col justify-center items-start gap-2 self-stretch text-white text-sm not-italic font-bold leading-6;
+  }
+  .headfpop-second { 
+    @apply flex flex-col justify-center items-start gap-2 self-stretch text-white text-sm not-italic font-light leading-6;
+  }
+  .headfpop-main {
+    @apply flex flex-row; 
+  }
+  .Fregrant-dismiss {
+    @apply text-white text-center text-xl not-italic font-bold leading-5 underline self-stretch;
+  }
+  .Feegrant-box2 {
+    @apply flex w-[788px] h-[376px] flex-col justify-center items-start gap-10 backdrop-blur-[2px] px-6 py-10 rounded-2xl;
+  background: #20172f;
+  }
+  .Feegrant2 {
+    @apply flex justify-center items-center gap-2 flex-[1_0_0] self-stretch;
+  }
+  .Feegrant2 h2 {
+    @apply text-white text-center text-xl not-italic font-bold leading-3 flex w-52 flex-col justify-center self-stretch;
+  }
+  .Feegrant2-Image {
+    @apply flex w-[740px] flex-col items-center gap-6 px-[120px] py-0;
+  }
+  .Feegrant2-Image img {
+    @apply flex flex-col items-center gap-4;
+  }
+  .Feegrant2-Image p {
+    @apply text-white text-center text-xl not-italic font-light leading-5;
+  }
+  .Feegrant2-buttons {
+    @apply flex flex-row items-center gap-10 self-stretch w-full justify-between ;
+  }
+  .Feegrant2-cancel {
+    @apply flex justify-center items-center gap-2.5 self-stretch border px-6 py-3.5 rounded-[100px] border-solid border-white w-[350px] h-10 text-white
+    font-normal leading-3 ;
+  }
+  .Revoke {
+    @apply flex justify-center items-center gap-2.5 self-stretch border px-6 py-3.5 rounded-[100px] border-solid border-white w-[350px] h-10 text-white
+    font-normal leading-3 ;
+  }
+  .Feegrant-box3 {
+    @apply flex w-[788px] h-[356px] flex-col justify-center items-start gap-10 backdrop-blur-[2px] px-6 py-10 rounded-2xl;
+    background: #20172f;
+  }
+  .Feegrant3 {
+    @apply flex justify-center items-center gap-2 flex-[1_0_0] self-stretch;
+  }
+  .Feegrant3 h2 {
+    @apply text-white text-center text-xl not-italic font-bold leading-3 flex w-52 flex-col justify-center self-stretch;
+  }
+  .Feegrant3-Image {
+    @apply flex w-[740px] flex-col items-center gap-6 px-[120px] py-0;
+  }
+  .Feegrant3-Image img {
+    @apply flex flex-col items-center gap-4;
+  }
+  .Feegrant3-Image p {
+    @apply text-white text-center text-xl not-italic font-light leading-5;
+  }
+  .Feegrant-Dismiss {
+  @apply text-white text-center text-xl not-italic font-bold leading-5 underline self-stretch;
+  }
+  .group-grid {
+    @apply grid grid-cols-4 gap-[24px] ;
+  }
+  .group-grid-card {
+    @apply flex w-full flex-col items-start gap-6 p-6 rounded-2xl;
+    background-color: rgba(46, 32, 55, 0.75);
+  }
+  .group-title {
+    @apply flex justify-between items-center self-stretch;
+  }
+  .titlegrp{
+    @apply text-white text-base not-italic font-bold leading-3 mr-24;
+  }
+  .end-title {
+    @apply text-[#B0B0B0] text-xs not-italic font-normal leading-3 tracking-[0.48px];
+  }
+  .group-text {
+    @apply text-white text-sm not-italic font-normal leading-5 tracking-[0.56px] self-stretch;
+  }
+  .group-head{
+    @apply flex justify-between gap-10 self-stretch;
+  }
+  .headg {
+    @apply flex flex-col items-start gap-2 w-[67px];
+  }
+  .headg-first {
+    @apply text-[#B0B0B0] text-xs not-italic font-normal leading-3 tracking-[0.48px];
+  }
+  .headg-second {
+    @apply text-white text-sm not-italic font-normal leading-3 tracking-[0.56px];
+  }
+  .head2g {
+    @apply  justify-center items-start space-y-2 self-stretch;
+  }
+  .head2g-first {
+    @apply text-[#B0B0B0] text-xs not-italic font-normal leading-3 tracking-[0.48px];
+  }
+  .head2g-second { 
+    @apply text-white text-sm not-italic font-normal leading-3 tracking-[0.56px];
+  }
+  .Groupbuttons {
+    @apply flex justify-between items-center self-stretch;;
+    
+  }
+  .viewbutton {
+    @apply flex justify-center items-center gap-2.5 self-stretch border px-6 py-3.5 rounded-[100px] border-solid border-white w-[127px];
+  }
+  .leavebutton {
+    @apply flex w-[127px] justify-center items-center gap-2.5 self-stretch border px-6 py-3.5 rounded-[100px] border-solid border-white;
+  }
+
+}
+ 
