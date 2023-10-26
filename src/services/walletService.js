@@ -1,3 +1,4 @@
+'use client'
 import { setConnected, setWalletName } from "staking/utils/localStorage"
 
 export const isWalletInstalled = walletName => {

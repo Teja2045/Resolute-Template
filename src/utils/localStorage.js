@@ -1,3 +1,4 @@
+'use client'
 export const KEY_WALLET_NAME = "WALLET_NAME"
 export const KEY_DARK_MODE = "DARK_MODE"
 
