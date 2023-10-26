@@ -4,8 +4,8 @@ import React from "react";
 const AssetsTable = () => {
   return (
     <div>
-      <table className="customTable overflow-y-scroll">
-        <thead className="customTableHead">
+      <table className="custom-table overflow-y-scroll">
+        <thead className="custom-table-head">
           <tr className="text-left">
             <th className="w-1/4">Network</th>
             <th className="w-1/5">StakeAmount</th>
@@ -31,7 +31,7 @@ const AssetsTable = () => {
               <td>2 OSMO</td>
               <td>0.3 OSMO</td>
               <td>
-                <span  className="font-bold">$ 2.2</span>
+                <span className="font-bold">$ 2.2</span>
                 <span className="pl-2 pr-1">
                   <Image
                     className="inline"
@@ -43,11 +43,13 @@ const AssetsTable = () => {
                 </span>
                 <span className="text-[#E57575] font-semibold">3.5%</span>
               </td>
-              <td className="flex justify-between">
-                <button className="customBtn">Claim</button>
-                <button className="customBtn customBtnDisabled">
-                  Claim & Stake
-                </button>
+              <td>
+                <div className="flex justify-between items-center">
+                  <button className="custom-btn">Claim</button>
+                  <button className="custom-btn custom-btn-disabled">
+                    Claim & Stake
+                  </button>
+                </div>
               </td>
             </tr>
           ))}

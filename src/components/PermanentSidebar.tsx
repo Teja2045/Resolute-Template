@@ -55,15 +55,17 @@ const PermanentSidebar = ({ children }: { children: React.ReactNode }) => {
   const pathParts = pathname.split("/");
   const selectedPart = getSelectedPartFromURL(pathParts);
   return (
-    <div className="flex bg-[#1F102D99]">
+    <div className="main">
       <div className="sidebar">
-        <div className="sidebar__menu">
-          <Image
-            src="/vitwit-logo.png"
-            width={184}
-            height={52}
-            alt="Vitwit Logo"
-          />
+        <div className="sidebar-menu">
+          <div className="sidebar-logo">
+            <Image
+              src="/vitwit-logo.png"
+              width={184}
+              height={52}
+              alt="Vitwit Logo"
+            />
+          </div>
           <div className="flex flex-col gap-4">
             {menuItems.map((item, index) => (
               <MenuItem
@@ -71,21 +73,20 @@ const PermanentSidebar = ({ children }: { children: React.ReactNode }) => {
                 key={index}
                 itemName={item.name}
                 icon={item.icon}
-                selected={false}
                 link={item.link}
               />
             ))}
           </div>
         </div>
-        <div className="sidebar__footer">
-          <div className="sidebar__footer__border"></div>
-          <div className="sidebar__footer__authz">
+        <div className="sidebar-footer">
+          <div className="sidebar-footer-border"></div>
+          <div className="sidebar-footer-authz">
             <div>Authz Mode</div>
             <div>Toggle</div>
           </div>
         </div>
       </div>
-      <div className="flex flex-col items-center overflow-y-scroll no-scrollbar h-screen w-screen text-white">
+      <div className="page-content">
         <div className="w-full">
           <div className=" mx-10 mt-10 relative">
             <TopNav pathname={selectedPart} />
@@ -103,21 +104,19 @@ const MenuItem = ({
   pathname,
   itemName,
   icon,
-  selected,
   link,
 }: {
   pathname: string;
   itemName: string;
   icon: any;
-  selected: boolean;
   link: string;
 }) => {
   pathname = pathname.toLowerCase();
   pathname = pathname === "overview" ? "/" : `/${pathname}`;
   return (
     <Link
-      className={`sidebar__menu__item ${
-        pathname === link ? "sidebar__menu__item-selected" : ""
+      className={`sidebar-menu-item ${
+        pathname === link ? "sidebar-menu-item-selected" : ""
       }`}
       href={link}
     >
